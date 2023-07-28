@@ -69,5 +69,11 @@ export class FutureAge {
     this.time = (this.future - this.current);
     return this.time;
   }
+
+  mercuryFuture() {
+    this.time = (this.future - this.current);
+    this.time = this.time * .24
+    return this.time;
+  }
 }
 
