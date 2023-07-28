@@ -1,18 +1,15 @@
 export class User {
-  constructor(name, mercuryAge, venusAge, earthAge, marsAge, jupiterAge,) {
+  constructor(name, age) {
     this.name = name;
-    this.mercuryAge = mercuryAge;
-    this.venusAge = venusAge;
-    this.earthAge = earthAge;
-    this.marsAge = marsAge;
-    this.jupiterAge = jupiterAge;
+    this.age = age
   };
 
-  mercuryAge() {
-    return this.mercuryAge / .24;
+  mercuryCalc() {
+    return this.age / .24;
   }
 
-  venusAge() {
-    return this.venusAge / .62;
+  venusCalc() {
+    this.venusAge = this.age / 0.62;
+    return this.venusAge;
   }
 }
