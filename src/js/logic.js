@@ -81,5 +81,11 @@ export class FutureAge {
     this.time = this.time * .62
     return this.time;
   }
+
+  marsFuture() {
+    this.time = (this.future - this.current);
+    this.time = this.time * 1.88
+    return this.time;
+  }
 }
 
