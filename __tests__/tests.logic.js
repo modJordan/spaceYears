@@ -90,4 +90,10 @@ describe("FutureAge", () => {
     char.mercuryFuture();
     expect(char.time).toBe((char.future - char.current) * .24)
   })
+
+  it("should calculate the amount of time between current age and future birthday on Venus", () => {
+    const char = new FutureAge(31, 21, 0);
+    char.venusFuture();
+    expect(char.time).toBe((char.future - char.current) * .62);
+  })
 });
