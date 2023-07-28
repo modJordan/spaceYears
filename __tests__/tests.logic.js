@@ -1,4 +1,4 @@
-import { User } from "../src/js/logic.js";
+import { User, PastAge } from "../src/js/logic.js";
 
 describe("User", () => {
 
@@ -33,9 +33,9 @@ describe("User", () => {
   })
 
   it("determine how many years have passed on Mercury since a past birthday", () => {
-    const char = new User("Jojo", 31);
-    let mercPastBday = char.mercuryPastCalc();
-    expect(char.mercuryPastBirthday).toBe(mercPastBday);
+    const char = new PastAge(31, 21, 0);
+    char.mercuryPastAge()
+    expect(char.time).toBe((char.current - char.past) * .24);
   })
 
 })

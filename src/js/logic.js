@@ -1,4 +1,5 @@
 export class User {
+
   constructor(name, age) {
     this.name = name;
     this.age = age
@@ -21,5 +22,19 @@ export class User {
   jupiterCalc() {
     this.jupiterAge = this.age / 11.86;
     return this.jupiterAge;
+  }
+}
+
+export class PastAge {
+  constructor(current, past, time) {
+    this.current = current
+    this.past = past;
+    this.time = time;
+  }
+
+  mercuryPastAge() {
+    this.time = (this.current - this.past);
+    this.time = this.time * .24
+    return this.time;
   }
 }
