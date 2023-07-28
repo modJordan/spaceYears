@@ -10,7 +10,7 @@ describe("User", () => {
 
   it("should display the Users current age on Mercury", () => {
     const char = new User("Jojo", 31);
-    char.mercuryAge();
-    expect(char.age).toBe(129);
+    let mercuryAge = char.mercuryAge();
+    expect(mercuryAge).toBe(31 / .24);
   })
 })
