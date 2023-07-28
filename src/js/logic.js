@@ -75,5 +75,11 @@ export class FutureAge {
     this.time = this.time * .24
     return this.time;
   }
+
+  venusFuture() {
+    this.time = (this.future - this.current);
+    this.time = this.time * .62
+    return this.time;
+  }
 }
 
