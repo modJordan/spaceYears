@@ -84,4 +84,10 @@ describe("FutureAge", () => {
     char.earthFuture();
     expect(char.time).toBe(38);
   })
+
+  it("should calculate the amount of time between current age and future birthday on Mercury", () => {
+    const char = new FutureAge(31, 69, 0);
+    char.mercuryFuture();
+    expect(char.time).toBe((char.future - char.current) * .24)
+  })
 });
