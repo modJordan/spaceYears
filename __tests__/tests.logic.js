@@ -25,4 +25,10 @@ describe("User", () => {
     char.marsCalc();
     expect(char.marsAge).toBe(31 / 1.88);
   })
+
+  it("should display the Users current age on Jupiter", () => {
+    const char = new User("Jojo", 31);
+    char.jupiterCalc();
+    expect(char.jupiterAge).toBe(31 / 11.86);
+  })
 })
