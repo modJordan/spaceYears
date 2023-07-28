@@ -12,4 +12,9 @@ export class User {
     this.venusAge = this.age / 0.62;
     return this.venusAge;
   }
+
+  marsCalc() {
+    this.marsAge = this.age / 1.88;
+    return this.marsAge;
+  }
 }
