@@ -31,6 +31,15 @@ describe("User", () => {
     char.jupiterCalc();
     expect(char.jupiterAge).toBe(31 / 11.86);
   })
+})
+
+describe("PastAge", () => {
+
+  it("should create a past age class with a current age and a past age", () => {
+    const char = new PastAge(31, 21, 0);
+    expect(char.current).toBe(31);
+    expect(char.past).toBe(21);
+  })
 
   it("determine how many years have passed on Mercury since a past birthday", () => {
     const char = new PastAge(31, 21, 0);
@@ -38,4 +47,9 @@ describe("User", () => {
     expect(char.time).toBe((char.current - char.past) * .24);
   })
 
+  it("determine how many years have passed on Mercury since a past birthday", () => {
+    const char = new PastAge(31, 21, 0);
+    char.mercuryPastAge()
+    expect(char.time).toBe((char.current - char.past) * .24);
+  })
 })
