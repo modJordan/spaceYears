@@ -78,4 +78,10 @@ describe("FutureAge", () => {
     expect(char.current).toBe(31);
     expect(char.future).toBe(69);
   })
+
+  it("should calculate the amount of time between current age and future birthday on Earth", () => {
+    const char = new FutureAge(31, 69, 0);
+    char.earthFuture();
+    expect(char.time).toBe(38);
+  })
 });
