@@ -76,6 +76,6 @@ describe("FutureAge", () => {
   it("should create a future age class whith a current age and a future age.", () => {
     const char = new FutureAge(31, 69, 0);
     expect(char.current).toBe(31);
-    expect(char.future).toBe(21);
+    expect(char.future).toBe(69);
   })
 });

@@ -60,7 +60,11 @@ export class PastAge {
     return this.time;
   }
 }
-// export class FutureAge {
-//   constructor()
-// }
+export class FutureAge {
+  constructor(current, future) {
+    this.current = current;
+    this.future = future;
+  }
+
+}
 
