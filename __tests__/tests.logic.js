@@ -52,4 +52,10 @@ describe("PastAge", () => {
     char.venusPastAge();
     expect(char.time).toBe((char.current - char.past) * .62);
   })
+
+  it("should determine how many years have passed on Mars since a past birthday", () => {
+    const char = new PastAge(31, 21, 0);
+    char.marsPastAge();
+    expect(char.time).toBe((char.current - char.past) * 1.88);
+  })
 })

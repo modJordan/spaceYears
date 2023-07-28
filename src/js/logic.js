@@ -43,4 +43,5 @@ export class PastAge {
     this.time = this.time * .62
     return this.time;
   }
+
 }
