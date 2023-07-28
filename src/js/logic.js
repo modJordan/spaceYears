@@ -53,4 +53,10 @@ export class PastAge {
     this.time = this.time * 1.88
     return this.time;
   }
+
+  jupiterPastAge() {
+    this.time = (this.current - this.past);
+    this.time = this.time * 11.86;
+    return this.time;
+  }
 }
