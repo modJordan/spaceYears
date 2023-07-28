@@ -19,4 +19,10 @@ describe("User", () => {
     char.venusCalc();
     expect(char.venusAge).toBe(31 / 0.62);
   })
+
+  it("should display the Users current age on Mars", () => {
+    const char = new User("Jojo", 31);
+    char.marsCalc();
+    expect(char.marsAge).toBe(31 / 1.88);
+  })
 })
