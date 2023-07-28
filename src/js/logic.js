@@ -3,7 +3,7 @@ export class User {
   constructor(name, age) {
     this.name = name;
     this.age = age
-  };
+  }
 
   mercuryCalc() {
     return this.age / .24;
@@ -60,3 +60,7 @@ export class PastAge {
     return this.time;
   }
 }
+// export class FutureAge {
+//   constructor()
+// }
+

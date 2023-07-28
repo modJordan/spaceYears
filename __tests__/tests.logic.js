@@ -1,4 +1,4 @@
-import { User, PastAge } from "../src/js/logic.js";
+import { User, PastAge, FutureAge } from "../src/js/logic.js";
 
 describe("User", () => {
 
@@ -71,3 +71,11 @@ describe("PastAge", () => {
     expect(char.time).toBe((char.current - char.past) * 11.86);
   })
 })
+
+describe("FutureAge", () => {
+  it("should create a future age class whith a current age and a future age.", () => {
+    const char = new FutureAge(31, 69, 0);
+    expect(char.current).toBe(31);
+    expect(char.future).toBe(21);
+  })
+});
