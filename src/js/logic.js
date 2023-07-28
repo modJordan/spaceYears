@@ -37,4 +37,10 @@ export class PastAge {
     this.time = this.time * .24
     return this.time;
   }
+
+  venusPastAge() {
+    this.time = (this.current - this.past);
+    this.time = this.time * .62
+    return this.time;
+  }
 }
