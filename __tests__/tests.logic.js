@@ -31,4 +31,11 @@ describe("User", () => {
     char.jupiterCalc();
     expect(char.jupiterAge).toBe(31 / 11.86);
   })
+
+  it("determine how many years have passed on Mercury since a past birthday", () => {
+    const char = new User("Jojo", 31);
+    let mercPastBday = char.mercuryPastCalc();
+    expect(char.mercuryPastBirthday).toBe(mercPastBday);
+  })
+
 })
