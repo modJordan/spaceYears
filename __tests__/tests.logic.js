@@ -58,4 +58,10 @@ describe("PastAge", () => {
     char.marsPastAge();
     expect(char.time).toBe((char.current - char.past) * 1.88);
   })
+
+  it("should determine how many years have passed on Jupiter since a past birthday", () => {
+    const char = new PastAge(31, 21, 0);
+    char.jupiterPastAge();
+    expect(char.time).toBe((char.current - char.past) * 11.86);
+  })
 })
