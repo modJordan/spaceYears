@@ -96,4 +96,10 @@ describe("FutureAge", () => {
     char.venusFuture();
     expect(char.time).toBe((char.future - char.current) * .62);
   })
+
+  it("should calculate the amount of time between current age and future birthday on Mars", () => {
+    const char = new FutureAge(31, 21, 0);
+    char.marsFuture();
+    expect(char.time).toBe((char.future - char.current) * 1.88);
+  })
 });
