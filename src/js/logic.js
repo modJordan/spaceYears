@@ -44,4 +44,9 @@ export class PastAge {
     return this.time;
   }
 
+  marsPastAge() {
+    this.time = (this.current - this.past);
+    this.time = this.time * 1.88
+    return this.time;
+  }
 }
