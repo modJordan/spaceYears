@@ -13,4 +13,10 @@ describe("User", () => {
     let mercuryAge = char.mercuryAge();
     expect(mercuryAge).toBe(31 / .24);
   })
+
+  it("should display the Users current age on Venus", () => {
+    const char = new User("Jojo", 31);
+    let venusAge = char.venusAge();
+    expect(venusAge).toBe(31 / .62);
+  })
 })
