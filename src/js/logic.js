@@ -32,6 +32,10 @@ export class PastAge {
     this.time = time;
   }
 
+  earthPastAge() {
+    this.time = (this.current - this.past);
+    return this.time;
+  }
   mercuryPastAge() {
     this.time = (this.current - this.past);
     this.time = this.time * .24

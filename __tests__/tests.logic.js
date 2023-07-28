@@ -44,7 +44,7 @@ describe("PastAge", () => {
   it("should determine how many years have passed on Earth since a past birthday", () => {
     const char = new PastAge(31, 21, 0);
     char.earthPastAge();
-    expect(char.time).toBe((char.current - char.past) * .24);
+    expect(char.time).toBe(char.current - char.past);
   })
 
   it("should determine how many years have passed on Mercury since a past birthday", () => {
