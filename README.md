@@ -23,6 +23,7 @@ _Teleport to your favorite planet and celebrate all of your galactic birthdays! 
 * Clone or Fork project
 * Make sure all images and files are in the proper folders
 * Run $npm run build to setup environment
+* Run $npm run test to run the TDD
 * Run $npm run start
 
 ## Known Bugs

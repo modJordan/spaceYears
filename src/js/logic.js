@@ -2,7 +2,7 @@ export class User {
 
   constructor(name, age) {
     this.name = name;
-    this.age = age
+    this.age = age;
   }
 
   mercuryCalc() {
@@ -27,7 +27,7 @@ export class User {
 
 export class PastAge {
   constructor(current, past, time) {
-    this.current = current
+    this.current = current;
     this.past = past;
     this.time = time;
   }
@@ -38,19 +38,19 @@ export class PastAge {
   }
   mercuryPastAge() {
     this.time = (this.current - this.past);
-    this.time = this.time * .24
+    this.time = this.time * .24;
     return this.time;
   }
 
   venusPastAge() {
     this.time = (this.current - this.past);
-    this.time = this.time * .62
+    this.time = this.time * .62;
     return this.time;
   }
 
   marsPastAge() {
     this.time = (this.current - this.past);
-    this.time = this.time * 1.88
+    this.time = this.time * 1.88;
     return this.time;
   }
 
@@ -72,19 +72,19 @@ export class FutureAge {
 
   mercuryFuture() {
     this.time = (this.future - this.current);
-    this.time = this.time * .24
+    this.time = this.time * .24;
     return this.time;
   }
 
   venusFuture() {
     this.time = (this.future - this.current);
-    this.time = this.time * .62
+    this.time = this.time * .62;
     return this.time;
   }
 
   marsFuture() {
     this.time = (this.future - this.current);
-    this.time = this.time * 1.88
+    this.time = this.time * 1.88;
     return this.time;
   }
 
